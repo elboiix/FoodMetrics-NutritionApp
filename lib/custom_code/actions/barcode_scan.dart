@@ -19,7 +19,7 @@ import 'package:zxing_lib/zxing.dart';
 import 'package:zxing_lib/common.dart';
 
 Future<String?> barcodeScan() async {
-  // 1. Al ejecutarse esta acción por tu toque, Safari abre la cámara real
+  // 1. Al ejecutarse esta acción por tu toque, abre la cámara real
   final ImagePicker picker = ImagePicker();
   final XFile? photo;
 

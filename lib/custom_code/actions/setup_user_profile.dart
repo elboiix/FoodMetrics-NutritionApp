@@ -49,7 +49,7 @@ Future<void> setupUserProfile(
         tdee = bmr * 1.2;
     }
 
-    // 3. DEFINIR TARGET VARIABLES
+    // 3. REGULAR CALORIAS SEGUN OBJETIVO
     double targetCalories;
     double proteinFactor;
     double fatFactor;

@@ -947,9 +947,13 @@ class _DashboardWidgetState extends State<DashboardWidget>
                                       children: [
                                         TextSpan(
                                           text: valueOrDefault<String>(
-                                            columnVwDashboardDisplayRow
-                                                ?.carbsConsumed
-                                                ?.toString(),
+                                            formatNumber(
+                                              columnVwDashboardDisplayRow
+                                                  ?.carbsConsumed,
+                                              formatType: FormatType.custom,
+                                              format: '0',
+                                              locale: '',
+                                            ),
                                             '0',
                                           ),
                                           style: FlutterFlowTheme.of(context)
@@ -1112,9 +1116,13 @@ class _DashboardWidgetState extends State<DashboardWidget>
                                       children: [
                                         TextSpan(
                                           text: valueOrDefault<String>(
-                                            columnVwDashboardDisplayRow
-                                                .proteinConsumed
-                                                ?.toString(),
+                                            formatNumber(
+                                              columnVwDashboardDisplayRow
+                                                  .proteinConsumed,
+                                              formatType: FormatType.custom,
+                                              format: '0',
+                                              locale: '',
+                                            ),
                                             '0',
                                           ),
                                           style: FlutterFlowTheme.of(context)
@@ -1276,9 +1284,13 @@ class _DashboardWidgetState extends State<DashboardWidget>
                                       children: [
                                         TextSpan(
                                           text: valueOrDefault<String>(
-                                            columnVwDashboardDisplayRow
-                                                .fatsConsumed
-                                                ?.toString(),
+                                            formatNumber(
+                                              columnVwDashboardDisplayRow
+                                                  .fatsConsumed,
+                                              formatType: FormatType.custom,
+                                              format: '0',
+                                              locale: '',
+                                            ),
                                             '0',
                                           ),
                                           style: FlutterFlowTheme.of(context)
