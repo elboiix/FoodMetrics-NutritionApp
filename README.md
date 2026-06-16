@@ -1,40 +1,78 @@
+<div align="center">
+
 # 🍏 FoodMetrics
 
-**FoodMetrics** es una aplicación móvil multiplataforma orientada a simplificar el registro de alimentos y la gestión inteligente del diario nutricional[cite: 1]. 
+[cite_start]*Desarrollo de una aplicación móvil multiplataforma para la gestión inteligente del diario nutricional*[cite: 13].
 
-Desarrollada para solucionar el problema del registro manual tedioso, la aplicación integra un escáner que permite identificar productos rápidamente y calcular automáticamente su aporte calórico y de macronutrientes[cite: 1].
+[![Desarrollo](https://img.shields.io/badge/Desarrollo-FlutterFlow%20%7C%20Dart-blue.svg)](#)
+[![Backend](https://img.shields.io/badge/Backend-Supabase%20%7C%20PostgreSQL-3ECF8E.svg)](#)
+[![API](https://img.shields.io/badge/API-OpenFoodFacts-orange.svg)](#)
+[![Plataforma](https://img.shields.io/badge/Plataforma-iOS_Optimized-lightgrey.svg)](#)
 
-## ✨ Funcionalidades Principales
-
-*   **📷 Escáner de Códigos de Barras (1D):** Identificación automática de productos utilizando la cámara del dispositivo y conectándose al catálogo público de OpenFoodFacts[cite: 1].
-*   **📊 Dashboard en Tiempo Real:** Visualización del progreso diario mediante anillos gráficos para carbohidratos, proteínas y grasas, así como el balance de calorías consumidas frente a las restantes[cite: 1].
-*   **📖 Diario de Comidas Interactivo:** Gestión de la ingesta distribuida por comidas (desayuno, almuerzo, cena) con opciones de búsqueda o introducción manual de nuevos alimentos[cite: 1].
-*   **🎯 Metas Biométricas Personalizadas:** Configuración de objetivos nutricionales adaptados al usuario (perder peso, mantener o ganar músculo) y cálculo automático del metabolismo basal[cite: 1].
-*   **🔒 Privacidad y Seguridad:** Autenticación de usuarios mediante Tokens JWT y aislamiento total de los datos de cada perfil[cite: 1].
-
-## 🛠️ Tecnologías y Arquitectura
-
-El proyecto está construido bajo una arquitectura cliente-servidor (BaaS) modular[cite: 1]:
-
-*   **Frontend / UI:** Construido con **FlutterFlow** y **Dart**, generando un paquete compilado de alto rendimiento nativo (.ipa) optimizado para entornos iOS[cite: 1].
-*   **Backend y Base de Datos:** **Supabase** funcionando como motor de base de datos relacional (**PostgreSQL**)[cite: 1].
-*   **Seguridad:** Uso de **Supabase Auth** y políticas estrictas de **Row Level Security (RLS)** para garantizar la estanqueidad y privacidad de la información por usuario[cite: 1].
-*   **APIs Externas:** Consumo asíncrono vía REST API de **OpenFoodFacts**, parametrizando las peticiones para optimizar el rendimiento y reducir el consumo de datos[cite: 1].
-*   **Gestión del Proyecto:** Metodología ágil (Kanban) con **Trello** y control de versiones en **GitHub**[cite: 1].
-
-## 🗄️ Estructura de Datos (Supabase)
-
-La base de datos relacional está normalizada y se divide en entidades clave para asegurar la integridad referencial[cite: 1]:
-*   `Profiles`: Credenciales, datos biométricos y objetivos del usuario[cite: 1].
-*   `Daily_logs`: Agrupación de la ingesta de un usuario por día[cite: 1].
-*   `Meal_entries`: Tabla transaccional central que relaciona diarios con alimentos consumidos[cite: 1].
-*   `Products`: Catálogo maestro de alimentos y macronutrientes[cite: 1].
-
-## 🚀 Estado del Proyecto
-
-Actualmente, el proyecto se encuentra en la fase de Producto Mínimo Viable (MVP) completamente funcional, testeado en dispositivos físicos de Apple y superando con éxito las pruebas de estabilidad de hardware (autoenfoque de cámara) y concurrencia[cite: 1]. 
-
-*Líneas futuras:* Refactorización del diseño responsive para su empaquetado y distribución en dispositivos Android (.AAB), e integración con plataformas como Apple Health o Google Fit[cite: 1].
+</div>
 
 ---
-**Autor:** Adrián Boix del Castillo | Desarrollador de Aplicaciones Multiplataforma (DAM)[cite: 1]
+
+## 📖 Sobre el Proyecto
+
+[cite_start]El control de la ingesta diaria suele ser un proceso complejo y tedioso, lo que lleva a muchos usuarios a abandonar el hábito al tener que leer etiquetas y calcular macronutrientes manualmente[cite: 71]. [cite_start]**FoodMetrics** es una herramienta móvil orientada a simplificar el registro de alimentos mediante el uso de un escáner integrado y su conexión a bases de datos nutricionales[cite: 68, 69].
+
+[cite_start]Este proyecto nace como Proyecto Intermodular para el Ciclo Formativo de Grado Superior en Desarrollo de Aplicaciones Multiplataforma (DAM)[cite: 14].
+
+---
+
+## ✨ Características Principales (MVP)
+
+* [cite_start]📸 **Escáner Inteligente (1D):** Integración de la cámara del dispositivo para leer códigos EAN-13 y mapear productos en menos de 8 segundos[cite: 77, 157, 181].
+* [cite_start]📊 **Dashboard Nutricional en Tiempo Real:** Cálculo automático de calorías y macronutrientes totales consumidos en el día con gráficos circulares de progreso[cite: 159, 173].
+* [cite_start]🎯 **Onboarding Personalizado:** Configuración inicial para establecer metas de pérdida de peso, mantenimiento o ganancia muscular[cite: 132, 929].
+* [cite_start]🔍 **Catálogo de Alimentos:** Conexión asíncrona a la API externa de *OpenFoodFacts* y opción de creación manual de productos y recetas locales[cite: 263, 264, 335].
+* [cite_start]🔒 **Privacidad Total:** Gestión de concurrencia y seguridad de datos a nivel de fila (RLS) en PostgreSQL, garantizando que cada usuario solo accede a su propia información[cite: 174, 814].
+
+---
+
+## 🛠️ Stack Tecnológico
+
+| Capa | Tecnología | Descripción |
+| :--- | :--- | :--- |
+| **Frontend** | **FlutterFlow / Dart** | [cite_start]Plataforma visual basada en Flutter para compilar código nativo, gestionando la interfaz de usuario y el estado local (App State)[cite: 226, 256, 258, 291]. |
+| **Backend & Base de Datos** | **Supabase / PostgreSQL** | [cite_start]Arquitectura BaaS (Backend as a Service) que proporciona una base de datos relacional robusta y sistema de autenticación seguro mediante JWT[cite: 233, 260, 261, 793, 1092]. |
+| **Integración (APIs)** | **OpenFoodFacts REST API** | [cite_start]Base de datos abierta utilizada para la ingesta de datos nutricionales a partir del código de barras[cite: 238, 243, 264]. |
+| **Gestión y Control** | **GitHub / Trello** | [cite_start]Repositorio central para control de versiones y tablero Kanban para la organización de hitos ágiles[cite: 277, 278, 279]. |
+
+---
+
+## 🏛️ Arquitectura del Sistema
+
+[cite_start]FoodMetrics emplea una arquitectura **Cliente-Servidor (BaaS)** estructurada en capas claramente diferenciadas[cite: 207, 789]:
+
+> [cite_start]1. **Capa de Presentación:** Aplicación nativa iOS procesando UI/UX de forma asíncrona[cite: 791, 811].
+> [cite_start]2. **Capa de Servicios:** Supabase Auth y lógica de acceso (Row Level Security)[cite: 234, 235, 236].
+> [cite_start]3. **Capa de Integración:** Peticiones HTTP REST externas a la API de OpenFoodFacts para la consulta de productos[cite: 244, 250, 794].
+> [cite_start]4. **Capa de Datos:** Clúster centralizado de PostgreSQL para almacenamiento de historiales y perfiles[cite: 247, 356].
+
+---
+
+## 📱 Capturas de Pantalla
+
+*(Añade aquí las imágenes de tu carpeta `/assets` del repositorio)*
+
+| Autenticación & Perfil | Dashboard & Progreso | Escáner & Diario |
+| :---: | :---: | :---: |
+| <img src="ruta/a/tu/imagen_login.png" width="200" alt="Pantalla Login"> | <img src="ruta/a/tu/imagen_dashboard.png" width="200" alt="Pantalla Dashboard"> | <img src="ruta/a/tu/imagen_diario.png" width="200" alt="Pantalla Diario"> |
+
+---
+
+## 🚀 Instalación y Despliegue
+
+### Requisitos Previos
+
+* [cite_start]**Dispositivo:** Apple iPhone 8 o superior (Arquitectura ARM64 / Chip A11+)[cite: 178, 179].
+* [cite_start]**Sistema Operativo:** iOS 14.0 o superior[cite: 183].
+* [cite_start]**Conectividad:** Conexión a Internet activa (Wi-Fi/4G/5G) indispensable para autenticación (Supabase) y consultas externas[cite: 198, 199].
+
+### Configuración del Entorno Local
+
+1. Clona este repositorio:
+   ```bash
+   git clone [https://github.com/tu-usuario/foodmetrics.git](https://github.com/tu-usuario/foodmetrics.git)
