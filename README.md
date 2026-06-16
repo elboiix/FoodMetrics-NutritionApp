@@ -23,11 +23,11 @@ Este proyecto nace como Proyecto Intermodular para el Ciclo Formativo de Grado S
 
 ## ✨ Características Principales (MVP)
 
-*📸 **Escáner Inteligente (1D):** Integración de la cámara del dispositivo para leer códigos EAN-13 y mapear productos en menos de 8 segundos.
-*📊 **Dashboard Nutricional en Tiempo Real:** Cálculo automático de calorías y macronutrientes totales consumidos en el día con gráficos circulares de progreso.
-*🎯 **Onboarding Personalizado:** Configuración inicial para establecer metas de pérdida de peso, mantenimiento o ganancia muscular.
-*🔍 **Catálogo de Alimentos:** Conexión asíncrona a la API externa de *OpenFoodFacts* y opción de creación manual de productos y recetas locales.
-*🔒 **Privacidad Total:** Gestión de concurrencia y seguridad de datos a nivel de fila (RLS) en PostgreSQL, garantizando que cada usuario solo accede a su propia información.
+* 📸 **Escáner Inteligente (1D):** Integración de la cámara del dispositivo para leer códigos EAN-13 y mapear productos en menos de 8 segundos.
+* 📊 **Dashboard Nutricional en Tiempo Real:** Cálculo automático de calorías y macronutrientes totales consumidos en el día con gráficos circulares de progreso.
+* 🎯 **Onboarding Personalizado:** Configuración inicial para establecer metas de pérdida de peso, mantenimiento o ganancia muscular.
+* 🔍 **Catálogo de Alimentos:** Conexión asíncrona a la API externa de *OpenFoodFacts* y opción de creación manual de productos y recetas locales.
+* 🔒 **Privacidad Total:** Gestión de concurrencia y seguridad de datos a nivel de fila (RLS) en PostgreSQL, garantizando que cada usuario solo accede a su propia información.
 
 ---
 
