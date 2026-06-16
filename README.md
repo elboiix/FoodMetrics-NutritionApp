@@ -59,7 +59,7 @@ FoodMetrics emplea una arquitectura **Cliente-Servidor (BaaS)** estructurada en 
 
 | Autenticación | Dashboard | Diario |
 | :---: | :---: | :---: |
-| <img src="https://i.imgur.com/O5Dktn0.png" width="200" alt="Pantalla Login"> | <img src="blob:https://imgur.com/dfd794f0-b932-4ba5-85f0-80b43b387294" width="200" alt="Pantalla Dashboard"> | <img src="https://i.imgur.com/VIMDcFd.png" width="200" alt="Pantalla Diario"> |
+| <img src="https://i.imgur.com/O5Dktn0.png" width="200" alt="Pantalla Login"> | <img src="https://i.imgur.com/PAmntWc.png" width="200" alt="Pantalla Dashboard"> | <img src="https://i.imgur.com/VIMDcFd.png" width="200" alt="Pantalla Diario"> |
 
 ---
 
